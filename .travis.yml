@@ -8,7 +8,10 @@ before_install:
 script:
 - make test
 - make release
+
+after_success:
 - make docker
+
 env:
   global:
   - secure: Xu3k/uU22TWcqYmK0NMOFZ+P1HimlMVKdOE3l5ImGUd3SSeL4MIKNVjEr2RKjqmkGVC3L/W+2qN8SDcxgxN9MhhOl5OJPsCYt5WMY0lxyNuBdHsjlJbpyblbQ42IPZJfJvjPxbhP/JqtDU3m7cCEsvy7XuGmkpbj0E2UvGFC63YHKTHh0/OHPgutmhxcCAz/oKhf6S6VTQ0WgS1/BrD3po4cERftlQzBVslNm/gdSgM7iNvflnPEWV5oUGPQfRQhWKgQ9caGMzd/w3MGR5wwl+Na3i2BW4cOs5ZvTF/JUIkuCH7y/QVD+pbhrgxE/A0pFKb/qEUamYIw8Rwi7VXMAmfkgq0REe/eHzqbII2qaEzZGx7+/C3nch3GrLUNwlot46YhZTThPURMHmwwjrrFO8Pn6c/xrOakrwbJeoeX8yDwMDN0Ma4+x0+cQXQFpouzsDoypqIqUJL9fsr2O/lg0QrPD7OZJ9D9UuQLOSvpKE7fNbUTh7WKEbTvWI1Avym0kc/kCWU1ZVSoGlKiT7VfSsxA6iqvoHnfImXUf+YuMO+EvjoWjoTDjHkUsm+sP097lze8MfCzoLNHSRE/3dZlLwrhHCB2Slsgmix5T3O2Skjat5yXLlIrwVNnD45X/cM0PDaSC9uHOuKMoeyN0TMml/qKG6RkB/yQ/JEulkRR6TQ=
