@@ -16,7 +16,7 @@ script:
 - make test
 - make release
 - make docker
-after_success:
+deploy:
 - make dockercloud
 env:
   global:
