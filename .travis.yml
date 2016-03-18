@@ -5,6 +5,7 @@ services:
 
 before_install:
   - docker pull golang:1.6
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 
 script:
   - make test
