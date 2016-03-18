@@ -14,6 +14,6 @@ docker:
 	docker push arminc/go-hello-world:`git rev-parse --abbrev-ref HEAD`
 
 dockercloud:
-	if [$TRAVIS_PULL_REQUEST != false]
+	if [$TRAVIS_PULL_REQUEST != false]; then
 		docker-cloud service run -p 8080 --name $TRAVIS_PULL_REQUEST arminc/go-hello-world:`git rev-parse --abbrev-ref HEAD`
 	fi
