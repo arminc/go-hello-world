@@ -1,5 +1,8 @@
 .DEFAULT_GOAL := release
 
+test:
+	go test
+
 build:
 	CGO_ENABLED=0 go build -v -a -installsuffix cgo -ldflags '-s'
 
