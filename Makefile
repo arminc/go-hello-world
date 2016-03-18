@@ -10,5 +10,8 @@ release:
 	docker run --rm -v $(CURDIR):/usr/src/go-hello-world -w /usr/src/go-hello-world golang:1.6 make build
 
 docker:
-	docker build -t arminxebia/go-hello-world:${TRAVIS_BRANCH} .
-	docker push arminxebia/go-hello-world:${TRAVIS_BRANCH}
+	docker build -t arminc/go-hello-world:${TRAVIS_BRANCH} .
+	docker push arminc/go-hello-world:${TRAVIS_BRANCH}
+
+dockercloud:
+	- docker-cloud service ps
