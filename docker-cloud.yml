@@ -1,0 +1,11 @@
+lb:
+  image: dockercloud/haproxy
+  links:
+    - web
+  ports:
+    - "80:80"
+  roles:
+    - global
+web:
+  image: arminc/go-hello-world
+  target_num_containers: 2
