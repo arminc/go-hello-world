@@ -7,5 +7,6 @@ lb:
   roles:
     - global
 web:
-  image: arminc/go-hello-world
+  image: arminc/go-hello-world:master
+  autoredeploy: true
   target_num_containers: 2
