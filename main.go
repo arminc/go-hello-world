@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
+	"math/rand"
 	"net/http"
 	"time"
-        "math/rand"
 )
 
 var number int
 
 func handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "Oops %d %s!", number, r.URL.Path[1:])
+	fmt.Fprintf(w, "BLA %d %s!", number, r.URL.Path[1:])
 }
 
 func main() {
